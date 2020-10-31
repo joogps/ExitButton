@@ -21,8 +21,5 @@ let package = Package(
         .target(
             name: "ExitButton",
             dependencies: []),
-        .testTarget(
-            name: "ExitButtonTests",
-            dependencies: ["ExitButton"]),
     ]
 )
