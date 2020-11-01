@@ -1,6 +1,6 @@
 <h1> ExitButton
-  <img align="right" src="../assets/dark-mode-128.png" width=60px>
-  <img align="right" src="../assets/light-mode-128.png" width=60px>
+  <img align="right" src="../assets/dark-mode-small.png" width=60px>
+  <img align="right" src="../assets/light-mode-small.png" width=60px>
 </h1>
 
 <p>
@@ -11,10 +11,10 @@
     </a>
 </p>
 
-A simple, native SwiftUI exit icon, with colors and sizes that exactly match Apple's.
+A simple, native SwiftUI exit icon made with SF Symbols, with colors and sizes that exactly match Apple's.
 
 ## Installation
-This repository is a Swift package, so you can just include it in your app through the Swift Package Manager. Alternatively, you can just copy this to your project and it will be up and running.
+This repository is a Swift package, so you can just include it in your app through the Swift Package Manager. Alternatively, you can just copy this to your project and it will be up and running:
 
 ```swift
 struct ExitButton: View {
