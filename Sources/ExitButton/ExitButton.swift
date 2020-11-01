@@ -1,6 +1,6 @@
 //
 //  ExitButton.swift
-//  Neomestre (iOS)
+//
 //
 //  Created by João Gabriel Pozzobon dos Santos on 31/10/20.
 //
@@ -32,7 +32,7 @@ struct ExitButton_Previews: PreviewProvider {
                 .previewDisplayName("Light Mode")
             ExitButton()
                 .previewLayout(.fixed(width: 100.0, height: 100.0))
-                .previewDisplayName("Light Mode")
+                .previewDisplayName("Dark Mode")
                 .environment(\.colorScheme, .dark)
         }
     }
