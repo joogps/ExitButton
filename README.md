@@ -1,6 +1,6 @@
 <h1> ExitButton
-  <img align="right" src="../assets/dark-mode-small.png" width=60px>
-  <img align="right" src="../assets/light-mode-small.png" width=60px>
+  <img align="right" alt="Dark icon" src="../assets/dark-mode-small.png" width=60px>
+  <img align="right" alt="Light icon" src="../assets/light-mode-small.png" width=60px>
 </h1>
 
 <p>
@@ -13,11 +13,18 @@
 
 A simple, native SwiftUI exit icon made with SF Symbols, with colors and sizes that exactly match Apple's.
 
+# 
+<img alt="Home app gif" src="../assets/home-app.gif" width=450px> <img alt="Share sheet gif" src="../assets/share-sheet.gif" width=450px>
+
+<p align="center">
+  <i>As seen in the Home app and the iOS share sheet</i>
+  </p>
+
 ## Installation
-This repository is a Swift package, so you can just include it in your app through the Swift Package Manager. Alternatively, you can just copy this to your project and it will be up and running:
+This repository is a Swift package, so you can just include it in your app through the Swift Package Manager. Alternatively, you can just copy the custom view to your project and it will work just as fine:
 
 ```swift
-struct ExitButton: View {
+struct ExitButtonView: View {
     @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
@@ -36,21 +43,22 @@ struct ExitButton: View {
 ```
 
 ## Usage
-Usage is incredibly straight forward. Just instantiate the view like this:
+Usage is incredibly straight forward. Just import the component and instantiate the view like this:
 ```swift
-ExitButton()
-```
+import ExitButton
 
+ExitButtonView()
+```
 
 and frame it like this:
 ```swift
-ExitButton().frame(width: 24, height: 24)
+ExitButtonView().frame(width: 24, height: 24)
 ```
 
 
 or use it as a button, like this:
 ```swift
 Button(action: { presentationMode.wrappedValue.dismiss() }) {
-  ExitButton()
+  ExitButtonView()
 }.frame(width: 24, height: 24)
 ```
