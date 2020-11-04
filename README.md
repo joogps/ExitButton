@@ -15,10 +15,7 @@ A simple, native SwiftUI exit icon made with SF Symbols, with colors and sizes t
 
 # 
 <img alt="Home app gif" src="../assets/home-app.gif" width=450px> <img alt="Share sheet gif" src="../assets/share-sheet.gif" width=450px>
-
-<p align="center">
-  <i>As seen in the Home app and the iOS share sheet</i>
-  </p>
+_As seen in the Home app and iOS share sheet_
 
 ## Installation
 This repository is a Swift package, so you can just include it in your app through the Swift Package Manager. Alternatively, you can just copy the custom view to your project and it will work just as fine:
