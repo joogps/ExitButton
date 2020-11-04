@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ExitButton: View {
+struct ExitButtonView: View {
     @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
@@ -27,10 +27,10 @@ struct ExitButton: View {
 struct ExitButton_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ExitButton()
+            ExitButtonView()
                 .previewLayout(.fixed(width: 100.0, height: 100.0))
                 .previewDisplayName("Light Mode")
-            ExitButton()
+            ExitButtonView()
                 .previewLayout(.fixed(width: 100.0, height: 100.0))
                 .previewDisplayName("Dark Mode")
                 .environment(\.colorScheme, .dark)
